@@ -34,3 +34,13 @@ Archived.args = {
     state: 'TASK_ARCHIVED',
   },
 };
+
+const longString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum elit ac lorem pretium malesuada. Integer a porttitor nulla. Maecenas accumsan interdum arcu non feugiat. Fusce tincidunt ligula ac suscipit pulvinar. Aenean eu eleifend nibh. Praesent est nulla, sodales vitae tristique nec, aliquet sed sem.";
+
+export const TextOverflow = Template.bind({});
+TextOverflow.args = {
+  task: {
+    ...Default.args.task,
+    title: longString,
+  }
+}
